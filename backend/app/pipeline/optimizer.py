@@ -44,7 +44,7 @@ async def optimize(svg: str) -> str:
         ])
         result = scourString(svg, options)
         return str(result) if result is not None else _optimize_fallback(svg)
-    except ImportError:
+    except Exception:
         return _optimize_fallback(svg)
 
 

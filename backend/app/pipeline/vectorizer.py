@@ -21,7 +21,7 @@ async def vectorize(img: Image.Image) -> str:
         bw.save(buf, format="PNG")
         buf.seek(0)
 
-        svg_bytes = vtracer.convert_png_to_svg(
+        svg_bytes = vtracer.convert_image_to_svg_py(
             buf.read(),
             colormode="binary",
             hierarchy="stacked",

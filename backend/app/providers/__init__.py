@@ -23,9 +23,13 @@ def get_provider(name: str | None = None) -> BaseProvider:
 
 from app.providers.flux import FluxProvider
 from app.providers.openai import OpenAIProvider
+from app.providers.gemini_image import GeminiImageProvider
+from app.providers.huggingface import HuggingFaceProvider
 
 register("flux", FluxProvider)
 register("openai", OpenAIProvider)
+register("gemini", GeminiImageProvider)
+register("huggingface", HuggingFaceProvider)
 
 # ── LLM providers ──
 
