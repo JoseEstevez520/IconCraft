@@ -9,6 +9,10 @@
   Transform natural language descriptions into production-ready, optimized SVG icons.
 </p>
 
+> [!IMPORTANT]
+> **This project is currently under development.**
+> It is not yet functional and many features are still being implemented.
+
 <p align="center">
   <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi" alt="FastAPI">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">

@@ -19,7 +19,7 @@ class AnthropicLLMProvider(BaseLLMProvider):
 
         body: dict = {
             "model": self.model,
-            "max_tokens": 300,
+            "max_tokens": 2000,
             "messages": [{"role": "user", "content": message}],
         }
         if system_prompt:

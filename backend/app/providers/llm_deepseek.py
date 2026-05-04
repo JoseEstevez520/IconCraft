@@ -25,7 +25,7 @@ class DeepSeekLLMProvider(BaseLLMProvider):
         resp = await self.client.post(
             DEEPSEEK_API_URL,
             headers={"Authorization": f"Bearer {self.api_key}", "Content-Type": "application/json"},
-            json={"model": self.model, "messages": messages, "max_tokens": 300},
+            json={"model": self.model, "messages": messages, "max_tokens": 2000},
         )
         resp.raise_for_status()
         data = resp.json()
